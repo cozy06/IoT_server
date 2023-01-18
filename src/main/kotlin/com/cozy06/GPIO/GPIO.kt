@@ -16,7 +16,7 @@ class GPIO {
         gpio.unprovisionPin(pin)
     }
 
-    fun getPinByNumber(number: Int): Pin {
+    private fun getPinByNumber(number: Int): Pin {
         return when (number) {
             2 -> RaspiPin.GPIO_02
             3 -> RaspiPin.GPIO_03
